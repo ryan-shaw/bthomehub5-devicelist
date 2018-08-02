@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="bthomehub5_devicelist",
+    name="bthomehub5-devicelist",
     version="0.1.0",
     author="Arran Hobson Sayers",
     author_email="ahobsonsayers@gmail.com",
@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/ahobsonsayers/bthomehub5-devicelist",
     packages=setuptools.find_packages(),
+    install_requires=['html-table-parser-python3', 'requests'],
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
